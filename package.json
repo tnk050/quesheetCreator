@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tnk050/quesheetCreator#readme",
   "dependencies": {
+    "@types/google-apps-script": "^1.0.45",
     "@types/jest": "^27.4.1",
     "eslint": "^8.10.0",
     "jest": "^27.5.1",
