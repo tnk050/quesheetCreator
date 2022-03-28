@@ -1,10 +1,10 @@
 export function convertDirection(input: string): string {
   const directionPattern = {
-    Straight: '直進',
-    Left: '左折',
-    Right: '右折',
-    'Slight Left': '左方向',
-    'Slight Right': '右方向',
+    Straight: "直進",
+    Left: "左折",
+    Right: "右折",
+    "Slight Left": "左方向",
+    "Slight Right": "右方向",
   };
   return directionPattern[input] || input;
 }
@@ -12,22 +12,22 @@ export function convertDirection(input: string): string {
 export function convertCrossing(input: string): string {
   const rxp = /(.*?)（交差点）/;
   const mutchs = rxp.exec(input);
-  return mutchs ? mutchs[1] : '';
+  return mutchs ? mutchs[1] : "";
 }
 
 export function convertRoute(input: string, type?: string): string {
   const rxp = /(.道)(\d+)号/g;
   const routeType = {
-    R: '国道',
-    T: '都道',
-    D: '道道',
-    F: '府道',
-    K: '県道',
-    C: '市道',
+    R: "国道",
+    T: "都道",
+    D: "道道",
+    F: "府道",
+    K: "県道",
+    C: "市道",
   };
   const routes = input.match(rxp);
   if (!routes) {
-    return '';
+    return "";
   }
   if (routes.length === 1) {
     return translate(routes[0]);
@@ -48,12 +48,18 @@ export function convertRoute(input: string, type?: string): string {
   } else if (cRoutes.length) {
     return translate(cRoutes[0]);
   } else {
-    return 'sortError';
+    return "sortError";
   }
 
+<<<<<<< HEAD
   function translate(route: string): string {
     const isIntegrateK = type === 'k';
     const isEnglish = type === 'en' || isIntegrateK;
+=======
+  function translate(route) {
+    const isIntegrateK = type === "k";
+    const isEnglish = type === "en" || isIntegrateK;
+>>>>>>> 51aab0089019ecabe066afe381a7e0e0e06debba
     if (isEnglish) {
       const strs = rxp.exec(route);
       let prefix =
@@ -61,11 +67,11 @@ export function convertRoute(input: string, type?: string): string {
         strs[1];
       if (
         isIntegrateK &&
-        (prefix === 'T' || prefix === 'D' || prefix === 'F' || prefix === 'K')
+        (prefix === "T" || prefix === "D" || prefix === "F" || prefix === "K")
       ) {
-        prefix = 'K';
+        prefix = "K";
       }
-      const routeNumber = strs[2] || 'xxx';
+      const routeNumber = strs[2] || "xxx";
       return prefix + routeNumber;
     } else {
       return route;
@@ -73,6 +79,7 @@ export function convertRoute(input: string, type?: string): string {
   }
 }
 
+<<<<<<< HEAD
 export function extractRemarks(input: string): string {
   const ignoreRxp = /(右折|左折|直進)する|進む/;
   const cutRxp = /(.*?)((右折|左折|直進)して|曲がり)/;
@@ -84,4 +91,11 @@ export function extractRemarks(input: string): string {
   } else {
     return input;
   }
+=======
+export function carryUp(input: number): number | string {
+  if (Number.isNaN(input)) {
+    return "carry up error";
+  }
+  return Math.round(input * 10) / 10;
+>>>>>>> 51aab0089019ecabe066afe381a7e0e0e06debba
 }
