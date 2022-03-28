@@ -85,3 +85,10 @@ export function extractRemarks(input: string): string {
     return input;
   }
 }
+
+export function carryUp(input: number): number | string {
+  if (Number.isNaN(input)) {
+    return 'carry up error';
+  }
+  return Math.round(input * 10) / 10;
+}

@@ -3,10 +3,10 @@ import {
   convertCrossing,
   convertRoute,
   carryUp,
-} from "./converter";
+} from './converter';
 
 function doGet(): GoogleAppsScript.HTML.HtmlOutput {
-  return HtmlService.createHtmlOutputFromFile("index");
+  return HtmlService.createHtmlOutputFromFile('index');
 }
 
 function processForm(formObject: { myFile }): GoogleAppsScript.Base.Blob {
@@ -14,18 +14,18 @@ function processForm(formObject: { myFile }): GoogleAppsScript.Base.Blob {
   const csvStr = formBlob.getDataAsString();
   const request = Utilities.parseCsv(csvStr);
   const editData = editQue(request);
-  const response = createCsv("convertedque", editData);
+  const response = createCsv('convertedque', editData);
   return response; //returnするだけじゃダメ
 }
 
 function editQue(csv: string[][]): string[][] {
   const response = [
-    ["No.", "ポイント", "方角", "道路", "合計", "備考", "説明"],
+    ['No.', 'ポイント', '方角', '道路', '合計', '備考', '説明'],
   ];
-  const typeName = "Type";
-  const notesName = "Notes";
-  const distName = "Distance (km) From Start";
-  const descriptionName = "Description";
+  const typeName = 'Type';
+  const notesName = 'Notes';
+  const distName = 'Distance (km) From Start';
+  const descriptionName = 'Description';
   const title = csv.shift();
   const typeClm = title.indexOf(typeName);
   const notesClm = title.indexOf(notesName);
@@ -46,12 +46,12 @@ function editQue(csv: string[][]): string[][] {
     const description = csv[i][descriptionClm];
     const addData = [];
     addData.push((i + 1).toString());
-    addData.push(notes ? convertCrossing(notes) : "");
-    addData.push(type ? convertDirection(type) : "");
-    addData.push(notes ? convertRoute(notes) : "");
-    addData.push(distance ? carryUp(Number(distance)).toString() : "");
+    addData.push(notes ? convertCrossing(notes) : '');
+    addData.push(type ? convertDirection(type) : '');
+    addData.push(notes ? convertRoute(notes) : '');
+    addData.push(distance ? carryUp(Number(distance)).toString() : '');
     // 備考欄作成
-    addData.push(description ? description : "");
+    addData.push(description ? description : '');
 
     response.push(addData);
   }
@@ -65,12 +65,12 @@ function editQue(csv: string[][]): string[][] {
 function createCsv(
   name: string,
   data: string[][],
-  charset: string = "utf-8"
+  charset: string = 'utf-8'
 ): GoogleAppsScript.Base.Blob {
-  const fileName = name + ".csv";
-  const contentType = "text/csv";
-  const dataStr = data.map((item) => item.join(",")).join("\r\n");
-  const blob = Utilities.newBlob("", contentType, fileName).setDataFromString(
+  const fileName = name + '.csv';
+  const contentType = 'text/csv';
+  const dataStr = data.map((item) => item.join(',')).join('\r\n');
+  const blob = Utilities.newBlob('', contentType, fileName).setDataFromString(
     dataStr,
     charset
   );

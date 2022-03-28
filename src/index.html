@@ -18,9 +18,15 @@
       function handleFormSubmit(formObject) {
         google.script.run.withSuccessHandler(updateUrl).processForm(formObject);
       }
-      function updateUrl(url) {
-        var div = document.getElementById('output');
-        div.innerHTML = '<a href="' + url + '">Got it!</a>';
+      function handleDownload(blob) {
+        const dialog = document.getElementById('output');
+        const result = document.createElement('p');
+        result.innerHTML = '作成完了';
+        result.appendChild(dialog);
+        const response = document.createElement('a');
+        response.innerHTML = 'Download';
+        response.href = window.URL.createObjectURL(blob);
+        response.appendChild(dialog);
       }
     </script>
   </head>
