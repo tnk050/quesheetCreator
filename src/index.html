@@ -22,7 +22,7 @@
       }
       function handleDownload(data) {
         const ar = new Uint8Array(data);
-        const blob = new Blob([ar.buffer]);
+        const blob = new Blob([ar.buffer], { type: 'text/csv' });
         const dialog = document.getElementById('output');
         dialog.href = window.URL.createObjectURL(blob); //エラーは出ないが出力されない。
       }
