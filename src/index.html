@@ -16,17 +16,15 @@
       window.addEventListener('load', preventFormSubmit);
 
       function handleFormSubmit(formObject) {
-        google.script.run.withSuccessHandler(updateUrl).processForm(formObject);
+        google.script.run
+          .withSuccessHandler(handleDownload)
+          .processForm(formObject);
       }
-      function handleDownload(blob) {
+      function handleDownload(data) {
+        const ar = new Uint8Array(data);
+        const blob = new Blob([ar.buffer]);
         const dialog = document.getElementById('output');
-        const result = document.createElement('p');
-        result.innerHTML = '作成完了';
-        result.appendChild(dialog);
-        const response = document.createElement('a');
-        response.innerHTML = 'Download';
-        response.href = window.URL.createObjectURL(blob);
-        response.appendChild(dialog);
+        dialog.href = window.URL.createObjectURL(blob); //エラーは出ないが出力されない。
       }
     </script>
   </head>
@@ -35,6 +33,6 @@
       <input name="myFile" type="file" />
       <input type="submit" value="Submit" />
     </form>
-    <div id="output"></div>
+    <a id="output" href="#">ダウンロード</a>
   </body>
 </html>

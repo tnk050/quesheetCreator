@@ -1,21 +1,26 @@
-import {
+/*import {
   convertDirection,
   convertCrossing,
   convertRoute,
   carryUp,
-} from './converter';
+} from './converter';*/
 
 function doGet(): GoogleAppsScript.HTML.HtmlOutput {
   return HtmlService.createHtmlOutputFromFile('index');
 }
 
-function processForm(formObject: { myFile }): GoogleAppsScript.Base.Blob {
+type Response = {
+  name: string;
+  data: Blob;
+};
+
+function processForm(formObject: { myFile }) {
   const formBlob = formObject.myFile;
   const csvStr = formBlob.getDataAsString();
   const request = Utilities.parseCsv(csvStr);
   const editData = editQue(request);
   const response = createCsv('convertedque', editData);
-  return response; //returnするだけじゃダメ
+  return response.getBytes(); //returnするだけじゃダメ
 }
 
 function editQue(csv: string[][]): string[][] {
@@ -50,7 +55,7 @@ function editQue(csv: string[][]): string[][] {
     addData.push(type ? convertDirection(type) : '');
     addData.push(notes ? convertRoute(notes) : '');
     addData.push(distance ? carryUp(Number(distance)).toString() : '');
-    // 備考欄作成
+    addData.push(notes ? extractRemarks(notes) : '');
     addData.push(description ? description : '');
 
     response.push(addData);
@@ -70,6 +75,7 @@ function createCsv(
   const fileName = name + '.csv';
   const contentType = 'text/csv';
   const dataStr = data.map((item) => item.join(',')).join('\r\n');
+
   const blob = Utilities.newBlob('', contentType, fileName).setDataFromString(
     dataStr,
     charset
