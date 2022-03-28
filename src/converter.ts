@@ -51,7 +51,7 @@ export function convertRoute(input: string, type?: string): string {
     return 'sortError';
   }
 
-  function translate(route) {
+  function translate(route: string): string {
     const isIntegrateK = type === 'k';
     const isEnglish = type === 'en' || isIntegrateK;
     if (isEnglish) {
@@ -70,5 +70,18 @@ export function convertRoute(input: string, type?: string): string {
     } else {
       return route;
     }
+  }
+}
+
+export function extractRemarks(input: string): string {
+  const ignoreRxp = /(右折|左折|直進)する|進む/;
+  const cutRxp = /(.*?)((右折|左折|直進)して|曲がり)/;
+  if (cutRxp.test(input)) {
+    const newstr = input.replace(cutRxp, '');
+    return newstr.replace(/^、/, '').trim();
+  } else if (ignoreRxp.test(input)) {
+    return '';
+  } else {
+    return input;
   }
 }

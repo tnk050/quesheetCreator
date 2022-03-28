@@ -2,6 +2,7 @@ import {
   convertDirection,
   convertCrossing,
   convertRoute,
+  extractRemarks,
 } from '../src/converter';
 
 const { testTypes, testNotes } = require('./testData');
@@ -33,5 +34,11 @@ test('convertRoute En', () => {
 test('convertRoute K', () => {
   testNotes.forEach((note) => {
     expect(convertRoute(note.data, 'k')).toBe(note.routeK);
+  });
+});
+
+test('extractRemarks', () => {
+  testNotes.forEach((note) => {
+    expect(extractRemarks(note.data)).toBe(note.remarks);
   });
 });

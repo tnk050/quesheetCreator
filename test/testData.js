@@ -14,7 +14,7 @@ const testNotes = [
     routeJ: '府道139号',
     routeE: 'F139',
     routeK: 'K139',
-    remark: '中央通り/​府道139号 に入る (枚方/​阪急茨木市駅 の表示)',
+    remarks: '中央通り/​府道139号 に入る (枚方/​阪急茨木市駅 の表示)',
   },
   {
     data: '右折してそのまま 府道139号 を進む (枚方/​鮎川 の表示)',
@@ -22,7 +22,7 @@ const testNotes = [
     routeJ: '府道139号',
     routeE: 'F139',
     routeK: 'K139',
-    remark: 'そのまま 府道139号 を進む (枚方/​鮎川 の表示)',
+    remarks: 'そのまま 府道139号 を進む (枚方/​鮎川 の表示)',
   },
   {
     data: '左折して府道132号に入る (高槻 の表示)',
@@ -30,7 +30,7 @@ const testNotes = [
     routeJ: '府道132号',
     routeE: 'F132',
     routeK: 'K132',
-    remark: '府道132号に入る (高槻 の表示)',
+    remarks: '府道132号に入る (高槻 の表示)',
   },
   {
     data: '左折する',
@@ -38,7 +38,7 @@ const testNotes = [
     routeJ: '',
     routeE: '',
     routeK: '',
-    remark: '',
+    remarks: '',
   },
   {
     data: '右折する',
@@ -46,7 +46,7 @@ const testNotes = [
     routeJ: '',
     routeE: '',
     routeK: '',
-    remark: '',
+    remarks: '',
   },
   {
     data: '中川町（交差点） を右折して 国道171号 に入る',
@@ -54,7 +54,7 @@ const testNotes = [
     routeJ: '国道171号',
     routeE: 'R171',
     routeK: 'R171',
-    remark: '国道171号 に入る',
+    remarks: '国道171号 に入る',
   },
   {
     data: '桃園町（交差点） を左折する',
@@ -62,7 +62,7 @@ const testNotes = [
     routeJ: '',
     routeE: '',
     routeK: '',
-    remark: '',
+    remarks: '',
   },
   {
     data: '右折して 新川いちょう通り に向かう',
@@ -70,7 +70,7 @@ const testNotes = [
     routeJ: '',
     routeE: '',
     routeK: '',
-    remark: '新川いちょう通り に向かう',
+    remarks: '新川いちょう通り に向かう',
   },
   {
     data: '斜め左方向に曲がり新川いちょう通りに入る',
@@ -78,7 +78,7 @@ const testNotes = [
     routeJ: '',
     routeE: '',
     routeK: '',
-    remark: '',
+    remarks: '新川いちょう通りに入る',
   },
   {
     data: '右折して西国街道に入る',
@@ -86,7 +86,7 @@ const testNotes = [
     routeJ: '',
     routeE: '',
     routeK: '',
-    remark: '西国街道に入る',
+    remarks: '西国街道に入る',
   },
   {
     data: '調子二丁目（交差点） を左折して 新西国街道/​物集女街道/​西国街道/​府道10号/​府道204号/​府道67号 に入る',
@@ -94,7 +94,7 @@ const testNotes = [
     routeJ: '府道10号',
     routeE: 'F10',
     routeK: 'K10',
-    remark:
+    remarks:
       '新西国街道/​物集女街道/​西国街道/​府道10号/​府道204号/​府道67号 に入る',
   },
   {
@@ -103,7 +103,7 @@ const testNotes = [
     routeJ: '府道29号',
     routeE: 'F29',
     routeK: 'K29',
-    remark: 'そのまま府道29号へ進む (嵐山/​松尾 の表示)',
+    remarks: 'そのまま府道29号へ進む (嵐山/​松尾 の表示)',
   },
   {
     data: '松尾大社（交差点） を右折して 四条通/​四条通り/​市道186号/​府道29号 に入る (嵯峨/​嵐山 の表示)',
@@ -111,7 +111,7 @@ const testNotes = [
     routeJ: '府道29号',
     routeE: 'F29',
     routeK: 'K29',
-    remark: '四条通/​四条通り/​市道186号/​府道29号 に入る (嵯峨/​嵐山 の表示)',
+    remarks: '四条通/​四条通り/​市道186号/​府道29号 に入る (嵯峨/​嵐山 の表示)',
   },
   {
     data: '右折して 石山通/​道道452号 に向かう',
@@ -119,7 +119,7 @@ const testNotes = [
     routeJ: '道道452号',
     routeE: 'D452',
     routeK: 'K452',
-    remark: '石山通/​道道452号 に向かう',
+    remarks: '石山通/​道道452号 に向かう',
   },
   {
     data: '大和陸橋（交差点） を左折して 環七通り/​都道318号 に入る (豊玉 の表示)',
@@ -127,7 +127,7 @@ const testNotes = [
     routeJ: '都道318号',
     routeE: 'T318',
     routeK: 'K318',
-    remark: '環七通り/​都道318号 に入る (豊玉 の表示)',
+    remarks: '環七通り/​都道318号 に入る (豊玉 の表示)',
   },
   {
     data: '朝来インター東（交差点） を右折して 国道312号/​国道429号 に入る (姫路/​生野 の表示)',
@@ -135,7 +135,7 @@ const testNotes = [
     routeJ: '国道312号',
     routeE: 'R312',
     routeK: 'R312',
-    remark: '国道312号/​国道429号 に入る (姫路/​生野 の表示)',
+    remarks: '国道312号/​国道429号 に入る (姫路/​生野 の表示)',
   },
   {
     data: '県道81号を進む',
@@ -143,7 +143,7 @@ const testNotes = [
     routeJ: '県道81号',
     routeE: 'K81',
     routeK: 'K81',
-    remark: '',
+    remarks: '',
   },
 ];
 
