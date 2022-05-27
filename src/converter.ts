@@ -16,7 +16,9 @@ export function convertCrossing(input: string): string {
 }
 
 export function convertRoute(input: string, type?: string): string {
-  const rxp = /(.道)(\d+)号/g;
+  const numberRxp = /(.道)(\d+)号/;
+  const exclusionRxp = /(?=(.*)(に|へ|を)(入る|進む|直進する))/;
+  const ignoreRxp = /(に|へ)向かう/;
   const routeType = {
     R: '国道',
     T: '都道',
@@ -25,21 +27,24 @@ export function convertRoute(input: string, type?: string): string {
     K: '県道',
     C: '市道',
   };
-  const routes = input.match(rxp);
-  if (!routes) {
+  const routeRxp = RegExp(numberRxp.source + exclusionRxp.source, 'g');
+  const routes = input.match(routeRxp);
+  if (!routes || ignoreRxp.test(input)) {
     return '';
   }
   if (routes.length === 1) {
     return translate(routes[0]);
   }
   const nRoutes = routes.filter((route) => route.includes(routeType.R));
-  const pRoutes = routes.filter(
-    (route) =>
-      route.includes(routeType.T) ||
-      route.includes(routeType.D) ||
-      route.includes(routeType.F) ||
-      route.includes(routeType.K)
-  );
+  const pRoutes = routes
+    .filter(
+      (route) =>
+        route.includes(routeType.T) ||
+        route.includes(routeType.D) ||
+        route.includes(routeType.F) ||
+        route.includes(routeType.K)
+    )
+    .sort((a, b) => numFilter(a) - numFilter(b));
   const cRoutes = routes.filter((route) => route.includes(routeType.C));
   if (nRoutes.length) {
     return translate(nRoutes[0]);
@@ -55,7 +60,7 @@ export function convertRoute(input: string, type?: string): string {
     const isIntegrateK = type === 'k';
     const isEnglish = type === 'en' || isIntegrateK;
     if (isEnglish) {
-      const strs = rxp.exec(route);
+      const strs = numberRxp.exec(route);
       let prefix =
         Object.keys(routeType).filter((key) => routeType[key] === strs[1])[0] ||
         strs[1];
@@ -74,15 +79,23 @@ export function convertRoute(input: string, type?: string): string {
 }
 
 export function extractRemarks(input: string): string {
-  const ignoreRxp = /(右折|左折|直進)する|進む/;
+  const ignoreRxp = /.*((右折|左折|直進|U ターン)する|曲がる)/;
   const cutRxp = /(.*?)((右折|左折|直進)して|曲がり)/;
+  const controlRxp = /PC|FC|通過チェック/;
   if (cutRxp.test(input)) {
     const newstr = input.replace(cutRxp, '');
     return newstr.replace(/^、/, '').trim();
   } else if (ignoreRxp.test(input)) {
-    return '';
+    const newstr = input.replace(ignoreRxp, '');
+    return newstr.replace(/^、/, '').trim();
+  } else if (controlRxp.test(input)) {
+    return addPcInfo(input);
   } else {
     return input;
+  }
+  function addPcInfo(input: string): string {
+    // todo POIから情報取り込む←でもPOIデータ持ってきてないよ。
+    return '';
   }
 }
 
@@ -91,4 +104,9 @@ export function carryUp(input: number): number | string {
     return 'carry up error';
   }
   return Math.round(input * 10) / 10;
+}
+
+function numFilter(str: string): number {
+  const rxp = /\d+/;
+  return rxp.test(str) ? parseInt(rxp.exec(str)[0], 10) : 0;
 }

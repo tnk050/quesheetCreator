@@ -1,0 +1,1314 @@
+[
+  {
+    "data": "高橋（交差点） を左折して 中央通り/府道139号 に入る (枚方/阪急茨木市駅 の表示)",
+    "crrosing": "高橋",
+    "routeJ": "府道139号",
+    "routeE": "F139",
+    "routeK": "K139",
+    "remarks": "中央通り/府道139号 に入る (枚方/阪急茨木市駅 の表示)"
+  },
+  {
+    "data": "永代町南（交差点） を左折して 中央通り/府道139号 に入る",
+    "crrosing": "永代町南",
+    "routeJ": "府道139号",
+    "routeE": "F139",
+    "routeK": "K139",
+    "remarks": "中央通り/府道139号 に入る"
+  },
+  {
+    "data": "右折してそのまま 府道139号 を進む (枚方/鮎川 の表示)",
+    "crrosing": "",
+    "routeJ": "府道139号",
+    "routeE": "F139",
+    "routeK": "K139",
+    "remarks": "そのまま 府道139号 を進む (枚方/鮎川 の表示)"
+  },
+  {
+    "data": "斜め左方向に曲がり、そのまま 府道139号 を進む",
+    "crrosing": "",
+    "routeJ": "府道139号",
+    "routeE": "F139",
+    "routeK": "K139",
+    "remarks": "そのまま 府道139号 を進む"
+  },
+  {
+    "data": "鷺打橋東詰（交差点） を右折する",
+    "crrosing": "鷺打橋東詰",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "枚方大橋北（交差点） を右折して 枚方大橋/国道170号/府道139号 に入る",
+    "crrosing": "枚方大橋北",
+    "routeJ": "国道170号",
+    "routeE": "R170",
+    "routeK": "R170",
+    "remarks": "枚方大橋/国道170号/府道139号 に入る"
+  },
+  {
+    "data": "左折して府道139号/府道13号に入る (京都/山田池公園 の表示)",
+    "crrosing": "",
+    "routeJ": "府道13号",
+    "routeE": "F13",
+    "routeK": "K13",
+    "remarks": "府道139号/府道13号に入る (京都/山田池公園 の表示)"
+  },
+  {
+    "data": "かささぎ橋（交差点） を右折して 府道144号 に入る",
+    "crrosing": "かささぎ橋",
+    "routeJ": "府道144号",
+    "routeE": "F144",
+    "routeK": "K144",
+    "remarks": "府道144号 に入る"
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "斜め左方向に曲がる",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折して 北河内サイクルライン に向かう",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "北河内サイクルライン に向かう"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "ランプを 京都/久御山/第二京阪道路 方面に進む",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "ランプを 京都/久御山/第二京阪道路 方面に進む"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折して 府道17号 に向かう",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "府道17号 に向かう"
+  },
+  {
+    "data": "左折して 府道17号 に向かう",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "府道17号 に向かう"
+  },
+  {
+    "data": "右折して府道17号に入る",
+    "crrosing": "",
+    "routeJ": "府道17号",
+    "routeE": "F17",
+    "routeK": "K17",
+    "remarks": "府道17号に入る"
+  },
+  {
+    "data": "杉１丁目（交差点） を左折して 国道307号 に入る (京田辺/京奈和自動車道 の表示)",
+    "crrosing": "杉１丁目",
+    "routeJ": "国道307号",
+    "routeE": "R307",
+    "routeK": "R307",
+    "remarks": "国道307号 に入る (京田辺/京奈和自動車道 の表示)"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して国道307号に入る",
+    "crrosing": "",
+    "routeJ": "国道307号",
+    "routeE": "R307",
+    "routeK": "R307",
+    "remarks": "国道307号に入る"
+  },
+  {
+    "data": "郷之口下町（交差点） を右折してそのまま 国道307号 を進む (甲賀/信楽 の表示)",
+    "crrosing": "郷之口下町",
+    "routeJ": "国道307号",
+    "routeE": "R307",
+    "routeK": "R307",
+    "remarks": "そのまま 国道307号 を進む (甲賀/信楽 の表示)"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して奥山田バイパス/国道307号に入る",
+    "crrosing": "",
+    "routeJ": "国道307号",
+    "routeE": "R307",
+    "routeK": "R307",
+    "remarks": "奥山田バイパス/国道307号に入る"
+  },
+  {
+    "data": "PC1",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "立石橋（交差点） を右折して 国道422号 に入る (伊賀 の表示)",
+    "crrosing": "立石橋",
+    "routeJ": "国道422号",
+    "routeE": "R422",
+    "routeK": "R422",
+    "remarks": "国道422号 に入る (伊賀 の表示)"
+  },
+  {
+    "data": "丸柱（交差点） を直進して 伊賀コリドールロード/県道674号 に入る (上野/東名阪自動車道 の表示)",
+    "crrosing": "丸柱",
+    "routeJ": "県道674号",
+    "routeE": "K674",
+    "routeK": "K674",
+    "remarks": "伊賀コリドールロード/県道674号 に入る (上野/東名阪自動車道 の表示)"
+  },
+  {
+    "data": "阿山中学校前（交差点） を右折して 県道49号 に入る",
+    "crrosing": "阿山中学校前",
+    "routeJ": "県道49号",
+    "routeE": "K49",
+    "routeK": "K49",
+    "remarks": "県道49号 に入る"
+  },
+  {
+    "data": "右折して県道2号へ進む",
+    "crrosing": "",
+    "routeJ": "県道2号",
+    "routeE": "K2",
+    "routeK": "K2",
+    "remarks": "県道2号へ進む"
+  },
+  {
+    "data": "左折してそのまま 県道2号 を進む",
+    "crrosing": "",
+    "routeJ": "県道2号",
+    "routeE": "K2",
+    "routeK": "K2",
+    "remarks": "そのまま 県道2号 を進む"
+  },
+  {
+    "data": "右折して県道28号に入る (榊原温泉 の表示)",
+    "crrosing": "",
+    "routeJ": "県道28号",
+    "routeE": "K28",
+    "routeK": "K28",
+    "remarks": "県道28号に入る (榊原温泉 の表示)"
+  },
+  {
+    "data": "左折して県道659号に入る (久居 の表示)",
+    "crrosing": "",
+    "routeJ": "県道659号",
+    "routeE": "K659",
+    "routeK": "K659",
+    "remarks": "県道659号に入る (久居 の表示)"
+  },
+  {
+    "data": "斜め右方向に曲がる",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折して県道24号に入る",
+    "crrosing": "",
+    "routeJ": "県道24号",
+    "routeE": "K24",
+    "routeK": "K24",
+    "remarks": "県道24号に入る"
+  },
+  {
+    "data": "須賀瀬大橋北詰（交差点） を左折して 県道697号 に入る (松阪 の表示)",
+    "crrosing": "須賀瀬大橋北詰",
+    "routeJ": "県道697号",
+    "routeE": "K697",
+    "routeK": "K697",
+    "remarks": "県道697号 に入る (松阪 の表示)"
+  },
+  {
+    "data": "斜め右方向に曲がる",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して県道580号に入る",
+    "crrosing": "",
+    "routeJ": "県道580号",
+    "routeE": "K580",
+    "routeK": "K580",
+    "remarks": "県道580号に入る"
+  },
+  {
+    "data": "小津西（交差点） を右折して 伊勢街道 に入る",
+    "crrosing": "小津西",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "伊勢街道 に入る"
+  },
+  {
+    "data": "斜め左方向に曲がり、そのまま 伊勢街道 を進む",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "そのまま 伊勢街道 を進む"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "松崎浦町（交差点） を右折して 国道166号 に入る",
+    "crrosing": "松崎浦町",
+    "routeJ": "国道166号",
+    "routeE": "R166",
+    "routeK": "R166",
+    "remarks": "国道166号 に入る"
+  },
+  {
+    "data": "宮町（交差点） を右折する",
+    "crrosing": "宮町",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して伊勢街道/県道22号に入る",
+    "crrosing": "",
+    "routeJ": "県道22号",
+    "routeE": "K22",
+    "routeK": "K22",
+    "remarks": "伊勢街道/県道22号に入る"
+  },
+  {
+    "data": "楠部西（交差点） を左折して 県道12号/県道37号 に入る (朝熊/三重県道37号 の表示)",
+    "crrosing": "楠部西",
+    "routeJ": "県道12号",
+    "routeE": "K12",
+    "routeK": "K12",
+    "remarks": "県道12号/県道37号 に入る (朝熊/三重県道37号 の表示)"
+  },
+  {
+    "data": "右折して国道42号に入る (賢島/磯部 の表示)",
+    "crrosing": "",
+    "routeJ": "国道42号",
+    "routeE": "R42",
+    "routeK": "R42",
+    "remarks": "国道42号に入る (賢島/磯部 の表示)"
+  },
+  {
+    "data": "松尾北（交差点） を左折して 県道47号 に入る (相差/三重県道47号 の表示)",
+    "crrosing": "松尾北",
+    "routeJ": "県道47号",
+    "routeE": "K47",
+    "routeK": "K47",
+    "remarks": "県道47号 に入る (相差/三重県道47号 の表示)"
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "U ターンする",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "斜め右方向に曲がる",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左車線を進む",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "左車線を進む"
+  },
+  {
+    "data": "斜め左方向に曲がり 県道47号 に向かう",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "県道47号 に向かう"
+  },
+  {
+    "data": "右折して県道47号に入る",
+    "crrosing": "",
+    "routeJ": "県道47号",
+    "routeE": "K47",
+    "routeK": "K47",
+    "remarks": "県道47号に入る"
+  },
+  {
+    "data": "左折して県道750号に入る",
+    "crrosing": "",
+    "routeJ": "県道750号",
+    "routeE": "K750",
+    "routeK": "K750",
+    "remarks": "県道750号に入る"
+  },
+  {
+    "data": "斜め右方向に曲がり県道47号/県道750号に入る",
+    "crrosing": "",
+    "routeJ": "県道47号",
+    "routeE": "K47",
+    "routeK": "K47",
+    "remarks": "県道47号/県道750号に入る"
+  },
+  {
+    "data": "左折して県道47号に入る",
+    "crrosing": "",
+    "routeJ": "県道47号",
+    "routeE": "K47",
+    "routeK": "K47",
+    "remarks": "県道47号に入る"
+  },
+  {
+    "data": "県道16号 を直進する",
+    "crrosing": "",
+    "routeJ": "県道16号",
+    "routeE": "K16",
+    "routeK": "K16",
+    "remarks": ""
+  },
+  {
+    "data": "的矢湾大橋北（交差点） を左折して パールロード/県道128号 に入る",
+    "crrosing": "的矢湾大橋北",
+    "routeJ": "県道128号",
+    "routeE": "K128",
+    "routeK": "K128",
+    "remarks": "パールロード/県道128号 に入る"
+  },
+  {
+    "data": "左折して県道129号/県道750号に入る",
+    "crrosing": "",
+    "routeJ": "県道129号",
+    "routeE": "K129",
+    "routeK": "K129",
+    "remarks": "県道129号/県道750号に入る"
+  },
+  {
+    "data": "右折してそのまま 県道129号/県道750号 を進む",
+    "crrosing": "",
+    "routeJ": "県道129号",
+    "routeE": "K129",
+    "routeK": "K129",
+    "remarks": "そのまま 県道129号/県道750号 を進む"
+  },
+  {
+    "data": "右折して県道514号に入る",
+    "crrosing": "",
+    "routeJ": "県道514号",
+    "routeE": "K514",
+    "routeK": "K514",
+    "remarks": "県道514号に入る"
+  },
+  {
+    "data": "PC2",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折して県道514号に入る",
+    "crrosing": "",
+    "routeJ": "県道514号",
+    "routeE": "K514",
+    "routeK": "K514",
+    "remarks": "県道514号に入る"
+  },
+  {
+    "data": "鵜方道（交差点） を右折して 国道167号 に入る",
+    "crrosing": "鵜方道",
+    "routeJ": "国道167号",
+    "routeE": "R167",
+    "routeK": "R167",
+    "remarks": "国道167号 に入る"
+  },
+  {
+    "data": "左折してそのまま 国道167号 を進む",
+    "crrosing": "",
+    "routeJ": "国道167号",
+    "routeE": "R167",
+    "routeK": "R167",
+    "remarks": "そのまま 国道167号 を進む"
+  },
+  {
+    "data": "右折して国道167号/国道260号に入る (伊勢/鳥羽 の表示)",
+    "crrosing": "",
+    "routeJ": "国道167号",
+    "routeE": "R167",
+    "routeK": "R167",
+    "remarks": "国道167号/国道260号に入る (伊勢/鳥羽 の表示)"
+  },
+  {
+    "data": "賢島口（交差点） を直進して 県道17号 に入る (浜島 の表示)",
+    "crrosing": "賢島口",
+    "routeJ": "県道17号",
+    "routeE": "K17",
+    "routeK": "K17",
+    "remarks": "県道17号 に入る (浜島 の表示)"
+  },
+  {
+    "data": "桧山路大橋西（交差点） を直進して 県道112号 に入る",
+    "crrosing": "桧山路大橋西",
+    "routeJ": "県道112号",
+    "routeE": "K112",
+    "routeK": "K112",
+    "remarks": "県道112号 に入る"
+  },
+  {
+    "data": "左折して県道152号に入る",
+    "crrosing": "",
+    "routeJ": "県道152号",
+    "routeE": "K152",
+    "routeK": "K152",
+    "remarks": "県道152号に入る"
+  },
+  {
+    "data": "右折して国道260号に入る (大紀/伊勢 の表示)",
+    "crrosing": "",
+    "routeJ": "国道260号",
+    "routeE": "R260",
+    "routeK": "R260",
+    "remarks": "国道260号に入る (大紀/伊勢 の表示)"
+  },
+  {
+    "data": "神津佐（交差点）を左折して国道260号を進む",
+    "crrosing": "神津佐",
+    "routeJ": "国道260号",
+    "routeE": "R260",
+    "routeK": "R260",
+    "remarks": "国道260号を進む"
+  },
+  {
+    "data": "船越（交差点） を右折して サニーロード/県道169号 に入る (伊勢/玉城/伊勢自動車道 の表示)",
+    "crrosing": "船越",
+    "routeJ": "県道169号",
+    "routeE": "K169",
+    "routeK": "K169",
+    "remarks": "サニーロード/県道169号 に入る (伊勢/玉城/伊勢自動車道 の表示)"
+  },
+  {
+    "data": "円座町（交差点） を左折して 県道22号 に入る (南伊勢 の表示)",
+    "crrosing": "円座町",
+    "routeJ": "県道22号",
+    "routeE": "K22",
+    "routeK": "K22",
+    "remarks": "県道22号 に入る (南伊勢 の表示)"
+  },
+  {
+    "data": "川口（交差点） を右折して 県道65号 に入る (玉城/国道42号/度会町役場/宮リバー度会パーク の表示)",
+    "crrosing": "川口",
+    "routeJ": "県道65号",
+    "routeE": "K65",
+    "routeK": "K65",
+    "remarks": "県道65号 に入る (玉城/国道42号/度会町役場/宮リバー度会パーク の表示)"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して県道38号に入る",
+    "crrosing": "",
+    "routeJ": "県道38号",
+    "routeE": "K38",
+    "routeK": "K38",
+    "remarks": "県道38号に入る"
+  },
+  {
+    "data": "左折してそのまま 県道38号 を進む",
+    "crrosing": "",
+    "routeJ": "県道38号",
+    "routeE": "K38",
+    "routeK": "K38",
+    "remarks": "そのまま 県道38号 を進む"
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して県道709号に入る",
+    "crrosing": "",
+    "routeJ": "県道709号",
+    "routeE": "K709",
+    "routeK": "K709",
+    "remarks": "県道709号に入る"
+  },
+  {
+    "data": "斜め左方向に曲がり旧熊野街道に入る",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "旧熊野街道に入る"
+  },
+  {
+    "data": "左折して旧熊野街道/県道709号に入る",
+    "crrosing": "",
+    "routeJ": "県道709号",
+    "routeE": "K709",
+    "routeK": "K709",
+    "remarks": "旧熊野街道/県道709号に入る"
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して国道368号に入る",
+    "crrosing": "",
+    "routeJ": "国道368号",
+    "routeE": "R368",
+    "routeK": "R368",
+    "remarks": "国道368号に入る"
+  },
+  {
+    "data": "朝柄（交差点） を左折してそのまま 国道368号 を進む (名張/飯南 の表示)",
+    "crrosing": "朝柄",
+    "routeJ": "国道368号",
+    "routeE": "R368",
+    "routeK": "R368",
+    "remarks": "そのまま 国道368号 を進む (名張/飯南 の表示)"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して県道710号に入る",
+    "crrosing": "",
+    "routeJ": "県道710号",
+    "routeE": "K710",
+    "routeK": "K710",
+    "remarks": "県道710号に入る"
+  },
+  {
+    "data": "右折して旧和歌山街道に入る",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "旧和歌山街道に入る"
+  },
+  {
+    "data": "右折してそのまま 旧和歌山街道 を進む",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "そのまま 旧和歌山街道 を進む"
+  },
+  {
+    "data": "右折して 国道166号 に向かう",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "国道166号 に向かう"
+  },
+  {
+    "data": "左折して国道166号に入る",
+    "crrosing": "",
+    "routeJ": "国道166号",
+    "routeE": "R166",
+    "routeK": "R166",
+    "remarks": "国道166号に入る"
+  },
+  {
+    "data": "左折して国道422号に入る (宮川 の表示)",
+    "crrosing": "",
+    "routeJ": "国道422号",
+    "routeE": "R422",
+    "routeK": "R422",
+    "remarks": "国道422号に入る (宮川 の表示)"
+  },
+  {
+    "data": "右折して県道569号に入る",
+    "crrosing": "",
+    "routeJ": "県道569号",
+    "routeE": "K569",
+    "routeK": "K569",
+    "remarks": "県道569号に入る"
+  },
+  {
+    "data": "左折してそのまま 県道569号 を進む",
+    "crrosing": "",
+    "routeJ": "県道569号",
+    "routeE": "K569",
+    "routeK": "K569",
+    "remarks": "そのまま 県道569号 を進む"
+  },
+  {
+    "data": "左車線を使用して 県道569号 を進む",
+    "crrosing": "",
+    "routeJ": "県道569号",
+    "routeE": "K569",
+    "routeK": "K569",
+    "remarks": "左車線を使用して 県道569号 を進む"
+  },
+  {
+    "data": "左折して国道166号に入る",
+    "crrosing": "",
+    "routeJ": "国道166号",
+    "routeE": "R166",
+    "routeK": "R166",
+    "remarks": "国道166号に入る"
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右車線を進む",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "右車線を進む"
+  },
+  {
+    "data": "右車線を進む",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "右車線を進む"
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "FC2",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "斜め左方向に曲がり国道166号に入る",
+    "crrosing": "",
+    "routeJ": "国道166号",
+    "routeE": "R166",
+    "routeK": "R166",
+    "remarks": "国道166号に入る"
+  },
+  {
+    "data": "左折して県道219号に入る (国道370号/宇陀警察署/東平尾連絡所 の表示)",
+    "crrosing": "",
+    "routeJ": "県道219号",
+    "routeE": "K219",
+    "routeK": "K219",
+    "remarks": "県道219号に入る (国道370号/宇陀警察署/東平尾連絡所 の表示)"
+  },
+  {
+    "data": "万六（交差点） を右折して 国道370号 に入る",
+    "crrosing": "万六",
+    "routeJ": "国道370号",
+    "routeE": "R370",
+    "routeK": "R370",
+    "remarks": "国道370号 に入る"
+  },
+  {
+    "data": "内原（交差点） を右折してそのまま 国道370号 を進む (針/榛原 の表示)",
+    "crrosing": "内原",
+    "routeJ": "国道370号",
+    "routeE": "R370",
+    "routeK": "R370",
+    "remarks": "そのまま 国道370号 を進む (針/榛原 の表示)"
+  },
+  {
+    "data": "野依（交差点） を左折する",
+    "crrosing": "野依",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "篠楽（交差点） を左折する (針/名阪国道/国道165号 の表示)",
+    "crrosing": "篠楽",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "(針/名阪国道/国道165号 の表示)"
+  },
+  {
+    "data": "玉立橋東詰（交差点） を左折して 国道369号 に入る (針/名阪国道 の表示)",
+    "crrosing": "玉立橋東詰",
+    "routeJ": "国道369号",
+    "routeE": "R369",
+    "routeK": "R369",
+    "remarks": "国道369号 に入る (針/名阪国道 の表示)"
+  },
+  {
+    "data": "左折してそのまま 国道369号 を進む (柳生 の表示)",
+    "crrosing": "",
+    "routeJ": "国道369号",
+    "routeE": "R369",
+    "routeK": "R369",
+    "remarks": "そのまま 国道369号 を進む (柳生 の表示)"
+  },
+  {
+    "data": "右折して柳生街道に入る (笠置/月ケ瀬/奈良県道4号 の表示)",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "柳生街道に入る (笠置/月ケ瀬/奈良県道4号 の表示)"
+  },
+  {
+    "data": "柳生（交差点） を左折して 県道4号 に入る",
+    "crrosing": "柳生",
+    "routeJ": "県道4号",
+    "routeE": "K4",
+    "routeK": "K4",
+    "remarks": "県道4号 に入る"
+  },
+  {
+    "data": "笠置大橋（交差点） を左折して 京都いづみチャーミングロード/国道163号 に入る (木津川市 の表示)",
+    "crrosing": "笠置大橋",
+    "routeJ": "国道163号",
+    "routeE": "R163",
+    "routeK": "R163",
+    "remarks": "京都いづみチャーミングロード/国道163号 に入る (木津川市 の表示)"
+  },
+  {
+    "data": "平田（交差点） を左折して 伊賀街道/国道163号/県道2号 に入る (津/美里 の表示)",
+    "crrosing": "平田",
+    "routeJ": "国道163号",
+    "routeE": "R163",
+    "routeK": "R163",
+    "remarks": "伊賀街道/国道163号/県道2号 に入る (津/美里 の表示)"
+  },
+  {
+    "data": "PC4",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "上狛四丁町（交差点） を右折して 国道24号 に入る (京都/宇治 の表示)",
+    "crrosing": "上狛四丁町",
+    "routeJ": "国道24号",
+    "routeE": "R24",
+    "routeK": "R24",
+    "remarks": "国道24号 に入る (京都/宇治 の表示)"
+  },
+  {
+    "data": "開橋（交差点） を左折して 府道71号 に入る (京奈和自動車道/精華 の表示)",
+    "crrosing": "開橋",
+    "routeJ": "府道71号",
+    "routeE": "F71",
+    "routeK": "K71",
+    "remarks": "府道71号 に入る (京奈和自動車道/精華 の表示)"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "右折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "府道71号を進む",
+    "crrosing": "",
+    "routeJ": "府道71号",
+    "routeE": "F71",
+    "routeK": "K71",
+    "remarks": "府道71号を進む"
+  },
+  {
+    "data": "水取車谷（交差点） を右折して 府道65号/府道71号 に入る",
+    "crrosing": "水取車谷",
+    "routeJ": "府道65号",
+    "routeE": "F65",
+    "routeK": "K65",
+    "remarks": "府道65号/府道71号 に入る"
+  },
+  {
+    "data": "普賢寺小学校前（交差点） を左折して 府道71号 に入る",
+    "crrosing": "普賢寺小学校前",
+    "routeJ": "府道71号",
+    "routeE": "F71",
+    "routeK": "K71",
+    "remarks": "府道71号 に入る"
+  },
+  {
+    "data": "氷室（交差点） を直進する (枚方/第二京阪道路 の表示)",
+    "crrosing": "氷室",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "(枚方/第二京阪道路 の表示)"
+  },
+  {
+    "data": "左折して国道307号に入る (枚方/第二京阪道路/大阪府道17号/長尾 の表示)",
+    "crrosing": "",
+    "routeJ": "国道307号",
+    "routeE": "R307",
+    "routeK": "R307",
+    "remarks": "国道307号に入る (枚方/第二京阪道路/大阪府道17号/長尾 の表示)"
+  },
+  {
+    "data": "杉１丁目（交差点） を右折して 府道17号 に入る (大阪府道17号/長尾 の表示)",
+    "crrosing": "杉１丁目",
+    "routeJ": "府道17号",
+    "routeE": "F17",
+    "routeK": "K17",
+    "remarks": "府道17号 に入る (大阪府道17号/長尾 の表示)"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "斜め左方向に曲がる",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して 北河内サイクルライン に向かう",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "北河内サイクルライン に向かう"
+  },
+  {
+    "data": "右折して北河内サイクルラインに入る",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "北河内サイクルラインに入る"
+  },
+  {
+    "data": "左折する",
+    "crrosing": "",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "左折して府道144号に入る",
+    "crrosing": "",
+    "routeJ": "府道144号",
+    "routeE": "F144",
+    "routeK": "K144",
+    "remarks": "府道144号に入る"
+  },
+  {
+    "data": "かささぎ橋（交差点） を左折して 鵲橋/府道13号 に入る (大阪/高槻 の表示)",
+    "crrosing": "かささぎ橋",
+    "routeJ": "府道13号",
+    "routeE": "F13",
+    "routeK": "K13",
+    "remarks": "鵲橋/府道13号 に入る (大阪/高槻 の表示)"
+  },
+  {
+    "data": "桜町（交差点）で歩道に入る",
+    "crrosing": "桜町",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": "桜町（交差点）で歩道に入る"
+  },
+  {
+    "data": "右折して国道170号/府道139号に入る",
+    "crrosing": "",
+    "routeJ": "国道170号",
+    "routeE": "R170",
+    "routeK": "R170",
+    "remarks": "国道170号/府道139号に入る"
+  },
+  {
+    "data": "枚方大橋北（交差点） を左折する",
+    "crrosing": "枚方大橋北",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "鷺打橋東詰（交差点） を左折して 鷺打橋/府道139号 に入る",
+    "crrosing": "鷺打橋東詰",
+    "routeJ": "府道139号",
+    "routeE": "F139",
+    "routeK": "K139",
+    "remarks": "鷺打橋/府道139号 に入る"
+  },
+  {
+    "data": "鷺打橋西（交差点） を左折する",
+    "crrosing": "鷺打橋西",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "府道139号 に入る",
+    "crrosing": "",
+    "routeJ": "府道139号",
+    "routeE": "F139",
+    "routeK": "K139",
+    "remarks": "府道139号 に入る"
+  },
+  {
+    "data": "左折して府道139号/府道15号に入る",
+    "crrosing": "",
+    "routeJ": "府道15号",
+    "routeE": "F15",
+    "routeK": "K15",
+    "remarks": "府道139号/府道15号に入る"
+  },
+  {
+    "data": "高橋（交差点） を右折して国道165号 に入る (国道171号 の表示)",
+    "crrosing": "高橋",
+    "routeJ": "国道165号",
+    "routeE": "R165",
+    "routeK": "R165",
+    "remarks": "国道165号 に入る (国道171号 の表示)"
+  },
+  {
+    "data": "中央公園北（交差点） を左折する",
+    "crrosing": "中央公園北",
+    "routeJ": "",
+    "routeE": "",
+    "routeK": "",
+    "remarks": ""
+  },
+  {
+    "data": "大和陸橋（交差点） を左折して 環七通り/都道318号 に入る (豊玉 の表示)",
+    "crrosing": "大和陸橋",
+    "routeJ": "都道318号",
+    "routeE": "T318",
+    "routeK": "K318",
+    "remarks": "環七通り/都道318号 に入る (豊玉 の表示)"
+  },
+  {
+    "data": "右折して道道296号に入る (上川/愛別/国道39号/北見層雲峡 の表示)",
+    "crrosing": "",
+    "routeJ": "道道296号",
+    "routeE": "D296",
+    "routeK": "K296",
+    "remarks": "道道296号に入る (上川/愛別/国道39号/北見層雲峡 の表示)"
+  },
+  {
+    "data": "松尾大社（交差点） を右折して 四条通/四条通り/市道186号/府道29号 に入る (嵯峨/嵐山 の表示)",
+    "crrosing": "松尾大社",
+    "routeJ": "府道29号",
+    "routeE": "F29",
+    "routeK": "K29",
+    "remarks": "四条通/四条通り/市道186号/府道29号 に入る (嵯峨/嵐山 の表示)"
+  },
+  {
+    "data": "朝来インター東（交差点） を右折して 国道312号/国道429号 に入る (姫路/生野 の表示)",
+    "crrosing": "朝来インター東",
+    "routeJ": "国道312号",
+    "routeE": "R312",
+    "routeK": "R312",
+    "remarks": "国道312号/国道429号 に入る (姫路/生野 の表示)"
+  },
+  {
+    "data": "千代原口（交差点）を直進して、そのまま市道186号へ進む (嵐山/松尾 の表示)",
+    "crrosing": "千代原口",
+    "routeJ": "市道186号",
+    "routeE": "C186",
+    "routeK": "C186",
+    "remarks": "そのまま市道186号へ進む (嵐山/松尾 の表示)"
+  }
+]

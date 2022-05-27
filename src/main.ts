@@ -1,9 +1,10 @@
-/*import {
+import {
   convertDirection,
   convertCrossing,
   convertRoute,
   carryUp,
-} from './converter';*/
+  extractRemarks,
+} from './converter';
 
 function doGet(): GoogleAppsScript.HTML.HtmlOutput {
   return HtmlService.createHtmlOutputFromFile('index');

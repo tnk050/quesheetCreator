@@ -5,7 +5,8 @@ import {
   extractRemarks,
 } from '../src/converter';
 
-const { testTypes, testNotes } = require('./testData');
+const { testTypes } = require('./testData');
+const testNotes = require('./testNotes.json');
 
 test('convertDirection', () => {
   testTypes.forEach((value, key) => {
