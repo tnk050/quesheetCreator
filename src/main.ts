@@ -15,57 +15,39 @@ type Response = {
   data: Blob;
 };
 
-function processForm(formObject: { myFile }) {
-  const formBlob = formObject.myFile;
-  const csvStr = formBlob.getDataAsString();
-  const request = Utilities.parseCsv(csvStr);
-  const editData = editQue(request);
-  const response = createCsv('convertedque', editData);
-  return response.getBytes(); //returnするだけじゃダメ
+function processForm() {
+  //apiとcsvのmain処理を書く
+  // 名前mainに変更してもいいかも
 }
 
-function editQue(csv: string[][]): string[][] {
-  const response = [
-    ['No.', 'ポイント', '方角', '道路', '合計', '備考', '説明'],
-  ];
-  const typeName = 'Type';
-  const notesName = 'Notes';
-  const distName = 'Distance (km) From Start';
-  const descriptionName = 'Description';
-  const title = csv.shift();
-  const typeClm = title.indexOf(typeName);
-  const notesClm = title.indexOf(notesName);
-  const distClm = title.indexOf(distName);
-  const descriptionClm = title.indexOf(descriptionName);
-  [
-    [typeName, typeClm],
-    [notesName, notesClm],
-    [distName, distClm],
-    [descriptionName, descriptionClm],
-  ].forEach(
-    (item) => item[1] === -1 && response.push([addError(item[0] as string)])
-  );
-  for (let i = 1; i < csv.length; i++) {
-    const type = csv[i][typeClm];
-    const notes = csv[i][notesClm];
-    const distance = csv[i][distClm];
-    const description = csv[i][descriptionClm];
-    const addData = [];
-    addData.push((i + 1).toString());
-    addData.push(notes ? convertCrossing(notes) : '');
-    addData.push(type ? convertDirection(type) : '');
-    addData.push(notes ? convertRoute(notes) : '');
-    addData.push(distance ? carryUp(Number(distance)).toString() : '');
-    addData.push(notes ? extractRemarks(notes) : '');
-    addData.push(description ? description : '');
-
-    response.push(addData);
+function createQueFromCsv(formObject: { myFile: GoogleAppsScript.Base.Blob }) {
+  try {
+    const csv = prepareCsv(formObject.myFile);
+    const request = formatCsv(csv);
+    return editQue(request);
+  } catch (error) {
+    // htmlにエラー返すことになるかな?
   }
+}
+
+function editQue(input: Intermediate[]): string[][] {
+  const response = input.map((item, index) => {
+    const { type, notes, distance, description } = item;
+    const no = (index + 1).toString();
+    const point = convertCrossing(notes);
+    const direction = convertDirection(type);
+    const route = convertRoute(notes);
+    const labelDistance = carryUp(distance).toString();
+    const remarks = extractRemarks(notes);
+    return [no, point, direction, route, labelDistance, remarks, description];
+  });
+  response.unshift(['No.', 'ポイント', '方角', '道路', '合計', '備考', '説明']);
   return response;
+}
 
-  function addError(input: string): string {
-    return `エラー: ${input}列が存在しません`;
-  }
+function returnCsv(input: string[][]): number[] {
+  const response = createCsv('convertedque', input);
+  return response.getBytes(); //returnするだけじゃダメ
 }
 
 function createCsv(
