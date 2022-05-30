@@ -16,8 +16,9 @@ export function convertCrossing(input: string): string {
 }
 
 export function convertRoute(input: string, type?: string): string {
-  const numberRxp = /(.道)(\d+)号/;
-  const exclusionRxp = /(?=(.*)(に|へ|を)(入る|進む|直進する))/;
+  const routeRxp = /(.道)(\d+)号/g;
+  // const exclusionRxp = /(?=(.*)(に|へ|を)(入る|進む|直進する))/; 一応残しておく
+  const extractRxp = /\(.*の表示\)/;
   const ignoreRxp = /(に|へ)向かう/;
   const routeType = {
     R: '国道',
@@ -27,8 +28,8 @@ export function convertRoute(input: string, type?: string): string {
     K: '県道',
     C: '市道',
   };
-  const routeRxp = RegExp(numberRxp.source + exclusionRxp.source, 'g');
-  const routes = input.match(routeRxp);
+  const routeData = input.replace(extractRxp, '');
+  const routes = routeData.match(routeRxp);
   if (!routes || ignoreRxp.test(input)) {
     return '';
   }
@@ -60,7 +61,7 @@ export function convertRoute(input: string, type?: string): string {
     const isIntegrateK = type === 'k';
     const isEnglish = type === 'en' || isIntegrateK;
     if (isEnglish) {
-      const strs = numberRxp.exec(route);
+      const strs = routeRxp.exec(route);
       let prefix =
         Object.keys(routeType).filter((key) => routeType[key] === strs[1])[0] ||
         strs[1];
