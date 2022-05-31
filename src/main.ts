@@ -1,3 +1,5 @@
+import { prepareCsv, formatCsv } from './formater';
+
 import {
   convertDirection,
   convertCrossing,
@@ -10,19 +12,21 @@ function doGet(): GoogleAppsScript.HTML.HtmlOutput {
   return HtmlService.createHtmlOutputFromFile('index');
 }
 
-type Response = {
-  name: string;
-  data: Blob;
-};
-
-function processForm() {
-  //apiとcsvのmain処理を書く
-  // 名前mainに変更してもいいかも
+function processForm(formObject: { queSheet: GoogleAppsScript.Base.Blob }) {
+  try {
+    const edited = createQueFromCsv(formObject);
+    const csv = returnCsv(edited);
+    return csv;
+  } catch (error) {
+    return error;
+  }
 }
 
-function createQueFromCsv(formObject: { myFile: GoogleAppsScript.Base.Blob }) {
+function createQueFromCsv(formObject: {
+  queSheet: GoogleAppsScript.Base.Blob;
+}) {
   try {
-    const csv = prepareCsv(formObject.myFile);
+    const csv = prepareCsv(formObject.queSheet);
     const request = formatCsv(csv);
     return editQue(request);
   } catch (error) {

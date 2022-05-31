@@ -1,34 +1,6 @@
-type CoursePoint = {
-  _e: number;
-  c?: boolean;
-  d: number;
-  i: number;
-  n: string;
-  t: string;
-  x: number;
-  y: number;
-  description?: string;
-};
+import './@types/types';
 
-type Intermediate = {
-  type: string;
-  notes: string;
-  distance: number;
-  description: string;
-};
-
-type QueSheetContents = {
-  no: number;
-  shape: string;
-  point: string;
-  direction: string;
-  routeNumber: string;
-  distance: number;
-  remarks: string;
-  notes: string;
-};
-
-function prepareCsv(file: GoogleAppsScript.Base.Blob): string[][] {
+export function prepareCsv(file: GoogleAppsScript.Base.Blob): string[][] {
   try {
     const csvStr = file.getDataAsString();
     return Utilities.parseCsv(csvStr);
@@ -37,7 +9,7 @@ function prepareCsv(file: GoogleAppsScript.Base.Blob): string[][] {
   }
 }
 
-function formatCsv(input: string[][]): Intermediate[] {
+export function formatCsv(input: string[][]): Intermediate[] {
   const response = [
     ['No.', 'ポイント', '方角', '道路', '合計', '備考', '説明'],
   ];
@@ -73,13 +45,13 @@ function formatCsv(input: string[][]): Intermediate[] {
   });
 }
 
-function downloadRwgps(id: number) {
+export function downloadRwgps(id: number) {
   const url = `https://ridewithgps.com/routes/${id}.json`;
   const resJson = UrlFetchApp.fetch(url).getContentText();
   return JSON.parse(resJson);
 }
 
-function prepareCoursePoints(input: CoursePoint[]): Intermediate[] {
+export function prepareCoursePoints(input: CoursePoint[]): Intermediate[] {
   return input.map((item) => {
     return {
       type: item.t,

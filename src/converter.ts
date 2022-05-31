@@ -100,6 +100,13 @@ export function extractRemarks(input: string): string {
   }
 }
 
+export function extractShape(input: string): string {
+  const shapes = ['╋', '┳', '┫', '┣', 'Y', 'X', '逆Y', '五差路'];
+  const rxp = new RegExp(`${shapes.join('|')}($|\s)`, 'g');
+  const shape = input.match(rxp)[0] || '';
+  return shape;
+}
+
 export function carryUp(input: number): number | string {
   if (Number.isNaN(input)) {
     return 'carry up error';

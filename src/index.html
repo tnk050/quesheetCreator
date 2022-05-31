@@ -18,6 +18,7 @@
       function handleFormSubmit(formObject) {
         google.script.run
           .withSuccessHandler(handleDownload)
+          .withFailureHandler(showError)
           .processForm(formObject);
       }
       function handleDownload(data) {
@@ -28,7 +29,16 @@
         link.appendChild(document.createTextNode("ダウンロード"));
         const container = document.getElementById("output");
         container.appendChild(link);
-        alert('作成しました')
+        alert('作成しました');
+      }
+      function showError(error) {
+        const ar = new Uint8Array(data);
+        const blob = new Blob([ar.buffer], { type: 'text/csv' });
+        const msg = document.createElement("p");
+        msg.innerHTML = "エラーコード\n" + error;
+        const container = document.getElementById("output");
+        container.appendChild(msg);
+        alert('作成に失敗しました');
       }
     </script>
     <style>
@@ -45,7 +55,7 @@
         <td>Type</td><td>Notes</td><td>Distance (km) From Start</td><td>Elevation (m)</td><td>Description</td><td>Edited</td>
       </tr>
       <tr>
-        <td>Left</td><td>高橋（交差点） を左折して 中央通り/​府道139号 に入る (枚方/​阪急茨木市駅 の表示)</td><td>0.24</td><td>12.57</td><td></td><td>Edited</td>
+        <td>Left</td><td>高橋（交差点） を左折して 中央通り/府道139号 に入る (枚方/​阪急茨木市駅 の表示)</td><td>0.24</td><td>12.57</td><td></td><td>Edited</td>
       </tr>
     </table>
     </br>こうなる
@@ -54,14 +64,14 @@
         <td>No.</td><td>ポイント</td><td>方角</td><td>道路</td><td>合計</td><td>備考</td><td>説明</td>
       </tr>
       <tr>
-        <td>2</td><td>高橋</td><td>左折</td><td>府道139号</td><td>0.2</td><td>中央通り/​府道139号 に入る (枚方/​阪急茨木市駅 の表示)</td><td></td>
+        <td>2</td><td>高橋</td><td>左折</td><td>府道139号</td><td>0.2</td><td>中央通り/府道139号 に入る (枚方/​阪急茨木市駅 の表示)</td><td></td>
       </tr>
     </table>
 <p>使い方</br>
 ファイルを選択→csvを選ぶ→Submit→出てきたダウンロードをクリック
 </p>
     <form id="myForm" onsubmit="handleFormSubmit(this)">
-      <input name="myFile" type="file" />
+      <input name="queSheet" type="file" />
       <input type="submit" value="Submit" />
     </form>
     <div id="output"></div>
